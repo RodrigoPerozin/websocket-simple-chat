@@ -1,0 +1,95 @@
+.divChat{
+    background-color: #1b1b24;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(44, 44, 44);
+}
+
+#divChat{
+    content-visibility: auto;
+    min-height: 5vh;
+    max-height: 90vh;
+    height: -webkit-fill-available;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
+    border: 1px solid rgb(2, 2, 2);
+    border-bottom: none;
+    background-position: center;
+    background-color: rgb(34, 34, 34);
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+#messagesChat{
+    content-visibility: auto;
+    max-height: -webkit-fill-available;
+    min-height: 5vh;
+    border-radius: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#messagesChat p{
+    font-family: monospace;
+    font-size: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+p{
+ margin: 5px;
+ overflow-wrap: break-word;
+}
+
+.strangeMsg{
+    color: red;
+    text-align: left;
+}
+
+.youMsg{
+    color: blue;
+    text-align: right;
+}
+
+.histMsg{
+    color: rgb(207, 207, 207);
+    text-align: left;
+}
+
+.txtToSend{
+    width: 150px;
+    display: inline;
+}
+
+#formSend{
+    margin-top: 2vh;
+    border: #232225 solid 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 10px;
+    padding-top: 1vh;
+    display: flex;
+}
+
+#formSend input{
+    width:98%;
+    background-color: rgb(184, 184, 184);
+}
+
+#formSend button{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3682/3682321.png");
+    background-size:contain;
+    background-color: transparent;
+    width: 35px;
+    border: none;
+    height: 35px;
+}
