@@ -28,6 +28,7 @@ socket.addEventListener('message', function (event) {
     }else{
         chatDiv.innerHTML = chatDiv.innerHTML+"<span class='strangeMsg'><p><b>STRANGE: </b>"+event.data+"</p></span>";
     }
+    chatDiv.scrollTop = chatDiv.scrollHeight - chatDiv.clientHeight;
 });
 
 function sendMsgToChat(){
@@ -36,6 +37,7 @@ function sendMsgToChat(){
 
     if(msg!="$_GETHIST"){
         chatDiv.innerHTML = chatDiv.innerHTML+"<span class='youMsg'><p>"+msg+"</span>";
+        chatDiv.scrollTop = chatDiv.scrollHeight - chatDiv.clientHeight;
     }
     document.getElementById("msgTxtToSend").value = "";
 }
